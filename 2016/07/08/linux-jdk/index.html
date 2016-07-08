@@ -15,8 +15,18 @@
 	})();
 	</script>
   
-  <title>归档 | 像风一样的女人</title>
+  <title>像风一样的女人</title>
   <meta name="author" content="Qiang Mu">
+  
+  <meta name="description" content="---
+title: Sublime Text 3 快捷键精华版
+date: 2016-07-07 13:18:08
+tags:
+---
+安装创建安装目录，在/usr/java下建立安装路径，并将文件考到该路径下： 
+# mkdir /usr/java
+
+1、jdk-6u11-linux-i586.">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -62,34 +72,137 @@
 </div>
 </header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-<h2 class="archive-title">归档</h2>
-
-<div class="archive">
-
-  <article class="post">
-	<div class="post-content">
-	  <header>
-		<time datetime="2016-07-08T02:25:28.000Z"><a href="/2016/07/08/linux-jdk/">2016-07-08</a></time>
-		
-		  <h1 class="title"><a href="/2016/07/08/linux-jdk/"></a></h1>
-		
-	  </header>
-	</div>
-  </article>
-
-  <article class="post">
-	<div class="post-content">
-	  <header>
-		<time datetime="2016-07-07T05:18:08.000Z"><a href="/2016/07/07/My-New-Post/">2016-07-07</a></time>
-		
-		  <h1 class="title"><a href="/2016/07/07/My-New-Post/">Sublime Text 3 快捷键精华版</a></h1>
-		
-	  </header>
-	</div>
-  </article>
-
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
 </div>
+  
+  <div class="post-content">
+    <header class="article-info clearfix">
+  <h1 itemprop="name">
+	
+  </h1>
+  <p class="article-author">By
+    
+      <a href="http://yoursite.com" title="Qiang Mu">Qiang Mu</a>
+    </p>
+  <p class="article-time">
+    <time datetime="2016-07-08T02:25:28.000Z" itemprop="datePublished">2016-07-08</time>
+    更新日期:<time datetime="2016-07-08T02:25:28.000Z" itemprop="dateModified">2016-07-08</time>
+    
+  </p>
+</header>
+    <div class="entry">
+		
+        <pre><code>---
+title: Sublime Text 3 快捷键精华版
+date: 2016-07-07 13:18:08
+tags:
+---
+</code></pre><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><pre><code>创建安装目录，在/usr/java下建立安装路径，并将文件考到该路径下： 
+# mkdir /usr/java
+
+1、jdk-6u11-linux-i586.bin 这个是自解压的文件，在linux上安装如下： 
+# chmod 755 jdk-6u11-linux-i586.bin 
+# ./jdk-6u11-linux-i586.bin （注意，这个步骤一定要在jdk-6u11-linux-i586.bin所在目录下）
+在按提示输入yes后，jdk被解压。
+出现一行字：Do you aggree to the above license terms? [yes or no]
+安装程序在问您是否愿意遵守刚才看过的许可协议。当然要同意了，输入&quot;y&quot; 或 &quot;yes&quot; 回车。
+
+2、若是用jdk-6u11-linux-i586-rpm.bin 这个也是一个自解压文件，不过解压后的文件是jdk-6u11-linux-i586-rpm 包，执行rpm命令装到linux上就可以了。安装如下： 
+#chmod 755 ./jdk-6u11-linux-i586-rpm
+# ./jdk-6u11-linux-i586-rpm .bin 
+# rpm -ivh jdk-6u11-linux-i586-rpm
+出现一行字：Do you aggree to the above license terms? [yes or no]
+安装程序在问您是否愿意遵守刚才看过的许可协议。当然要同意了，输入&quot;y&quot; 或 &quot;yes&quot; 回车。
+
+安装软件会将JDK自动安装到 /usr/java/目录下。 
+</code></pre><h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><pre><code>#vi /etc/profile
+在里面添加如下内容
+
+
+export JAVA_HOME=/usr/java/jdk1.6.0_27
+export JAVA_BIN=/usr/java/jdk1.6.0_27/bin
+export PATH=$PATH:$JAVA_HOME/bin
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+export JAVA_HOME JAVA_BIN PATH CLASSPATH
+让/etc/profile文件修改后立即生效 ,可以使用如下命令:
+# . /etc/profile
+注意: . 和 /etc/profile 有空格.
+
+重启测试
+java -version
+
+屏幕输出:
+ java version &quot;jdk1.6.0_02&quot;
+ Java(TM) 2 Runtime Environment, Standard Edition (build jdk1.6.0_02)
+ Java HotSpot(TM) Client VM (build jdk1.6.0_02, mixed mode)
+</code></pre>
+    </div>
+    <footer>
+        
+        
+		<div class="bdsharebuttonbox">
+	<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+	<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+	<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+	<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="bds_more" data-cmd="more"></a>
+	<a href="#" class="bds_count" data-cmd="count"></a>
+</div>
+<script>
+window._bd_share_config=
+{
+	"common":{
+		"bdSnsKey":{},
+		"bdText":"",
+		"bdMini":"2",
+		"bdMiniList":false,
+		"bdPic":"",
+		"bdStyle":"0",
+		"bdSize":"24"
+	},
+	"share":{},
+	"image":{
+		"viewList":["qzone","tsina","tqq","renren","weixin","fbook","twi"],
+		"viewText":"分享到：",
+		"viewSize":"24"
+	},
+	"selectShare":{
+		"bdContainerClass":null,
+		"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin","fbook","twi"]
+	}
+};
+with(document)0[
+	(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)
+];
+</script>    
+        <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+ <nav id="pagination" >
+    
+    
+    <a href="/2016/07/07/My-New-Post/" class="alignright next" title="Sublime Text 3 快捷键精华版">Sublime Text 3 快捷键精华版</a>
+    
+    <div class="clearfix"></div>
+</nav>
+
+
 </div></div>
     <aside id="sidebar" class="alignright">
   <div class="search">
